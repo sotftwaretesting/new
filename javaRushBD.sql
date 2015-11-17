@@ -12,7 +12,7 @@ age int,
 isAdmin bit,
 createdDate TIMESTAMP,
 PRIMARY KEY(id)
-)
+);
 
 INSERT INTO test.user(name, age, isAdmin, createdDate)
 VALUES('Sasha',25,false,now());
