@@ -1,2 +1,2 @@
 # new
-deploy to tomcat root folder
+set in Tomcat Web Application Manager, field  "Context Path (required)"  = /
