@@ -7,7 +7,6 @@ import javax.persistence.Persistence;
  * Created by V on 07.11.2015.
  */
 
-//todo change static methods, prepare for working on Tomcat
 public class UserEntityManager {
     private static EntityManager entityManager;
 
@@ -18,10 +17,7 @@ public class UserEntityManager {
     }
 
     public static EntityManager getUserEM(){
-      /*  if (entityManager == null){
-            entityManager = Persistence.createEntityManagerFactory("User").createEntityManager();
-        }*/
-        return entityManager;
+           return entityManager;
     }
 
     public static void close(){

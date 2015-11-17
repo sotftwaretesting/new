@@ -1,7 +1,9 @@
 package database.DTO;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.sql.Timestamp;
+import java.util.Date;
 
 /**
  * Created by V on 07.11.2015.
@@ -9,7 +11,9 @@ import java.sql.Timestamp;
 
 @Entity
 @Table(name = "User")
-public class User {
+public class User implements Serializable {
+
+    private static final long serialVersionUID = -5527566248002296042L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -26,8 +30,8 @@ public class User {
     private boolean isAdmin;
 
     @Column(name = "createdDate")
-//    @Temporal(value = TemporalType.TIMESTAMP)
-    private Timestamp wasCreated;
+    @Temporal(value = TemporalType.TIMESTAMP)
+    private Date wasCreated;
 
     public User() {
     }
@@ -43,7 +47,6 @@ public class User {
         return id;
     }
 
-    //todo change to private
     public void setId(int id) {
         this.id = id;
     }
@@ -64,19 +67,19 @@ public class User {
         this.age = age;
     }
 
-    public boolean isAdmin() {
+    public boolean getIsAdmin() {
         return isAdmin;
     }
 
-    public void setAdmin(boolean isAdmin) {
+    public void setIsAdmin(boolean isAdmin) {
         this.isAdmin = isAdmin;
     }
 
-    public Timestamp getCreated() {
+    public Date getCreated() {
         return wasCreated;
     }
 
-    public void setCreated(Timestamp created) {
+    public void setCreated(Date created) {
         this.wasCreated = created;
     }
 

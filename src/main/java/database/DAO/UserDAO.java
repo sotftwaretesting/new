@@ -10,12 +10,12 @@ import java.util.Map;
  */
 public interface UserDAO {
 
-    Map<Boolean, String> insertUser(User user);
+    void insertUser(User user) throws Exception;
 
-    Map<Boolean, String> updateUser(User user);
+    void updateUser(int id,User user) throws Exception;
 
-    Map<Boolean, String> deleteUser(int userId);
+    void deleteUser(int userId) throws Exception;
 
-    List<User> selectUsers(Map<String, String> filter);
+    List<User> selectUsers(Map<String, String> filter) throws Exception;
 
 }

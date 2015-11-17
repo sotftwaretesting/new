@@ -15,12 +15,49 @@ PRIMARY KEY(id)
 )
 
 INSERT INTO test.user(name, age, isAdmin, createdDate)
-VALUES('Sidorov',25,false,now());
+VALUES('Sasha',25,false,now());
 
 INSERT INTO test.user(name, age, isAdmin, createdDate)
-VALUES('Ivanov',35,false,now());
+VALUES('Vasya',35,false,now());
 
 INSERT INTO test.user(name, age, isAdmin, createdDate)
-VALUES('Petrov',40,true,now());
+VALUES('Slava',20,true,now());
+
+INSERT INTO test.user(name, age, isAdmin, createdDate)
+VALUES('Igor',44,true,now());
+
+INSERT INTO test.user(name, age, isAdmin, createdDate)
+VALUES('Luba',50,true,now());
+
+INSERT INTO test.user(name, age, isAdmin, createdDate)
+VALUES('Tanya',90,false,now());
+
+INSERT INTO test.user(name, age, isAdmin, createdDate)
+VALUES('Alex',23,true,now());
+
+INSERT INTO test.user(name, age, isAdmin, createdDate)
+VALUES('Nikita',15,true,now());
+
+INSERT INTO test.user(name, age, isAdmin, createdDate)
+VALUES('Dima',33,false,now());
+
+INSERT INTO test.user(name, age, isAdmin, createdDate)
+VALUES('Yana',54,FALSE ,now());
+
+INSERT INTO test.user(name, age, isAdmin, createdDate)
+VALUES('Natasha',23,true,now());
+
+INSERT INTO test.user(name, age, isAdmin, createdDate)
+VALUES('Petr',32,true,now());
+
+INSERT INTO test.user(name, age, isAdmin, createdDate)
+VALUES('Ira',33,false,now());
+
+INSERT INTO test.user(name, age, isAdmin, createdDate)
+VALUES('Denis',66,true,now());
+
+INSERT INTO test.user(name, age, isAdmin, createdDate)
+VALUES('Victor',33,false,now());
+
 commit;
 

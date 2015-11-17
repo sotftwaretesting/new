@@ -12,6 +12,8 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
+    <bean class="database.DAO.UserDAOImpl" id="userDAO"></bean>
+    <bean class="database.Service.ServiceImpl" id="service"></bean>
 
 
 </beans>
