@@ -12,7 +12,7 @@ age int,
 isAdmin bit,
 createdDate TIMESTAMP,
 PRIMARY KEY(id)
-)
+);
 
 INSERT INTO test.user(name, age, isAdmin, createdDate)
 VALUES('Sasha',25,false,now());
@@ -59,5 +59,9 @@ VALUES('Denis',66,true,now());
 INSERT INTO test.user(name, age, isAdmin, createdDate)
 VALUES('Victor',33,false,now());
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 152075e23b147ff1e160e58416c881e642fc7f61
 commit;
 
